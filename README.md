@@ -19,5 +19,3 @@ Internet traffic enters through the internet gateway.
 The route table directs that traffic into the subnet.
 The security group filters which ports on the instance are reachable (22, 80).
 The EC2 instance, with a public IP, becomes accessible over SSH and HTTP.
-
-A couple of things worth flagging in the README as known limitations, since they're common review comments on this kind of setup: the security group opens SSH (22) to 0.0.0.0/0, which is fine for a demo but should normally be restricted to your own IP; and there's only one subnet/AZ, so there's no high availability.
